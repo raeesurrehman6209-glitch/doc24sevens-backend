@@ -1,9 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "medifind-backend/src/server.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "medifind-backend/src/server.js" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api" }
   ]
 }
